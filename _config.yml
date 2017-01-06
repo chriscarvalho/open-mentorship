@@ -1,5 +1,6 @@
 title: Open Mentorship by Adam Whitcroft
-permalink: /open-mentorship/:title/
+permalink: /:title/
+baseurl: http://adamwhitcroft.com/
 # Build settings
 sass:
     style: compressed

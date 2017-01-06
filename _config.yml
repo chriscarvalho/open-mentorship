@@ -1,6 +1,5 @@
 title: Open Mentorship by Adam Whitcroft
 permalink: /:title/
-baseurl: http://adamwhitcroft.com/
 # Build settings
 sass:
     style: compressed

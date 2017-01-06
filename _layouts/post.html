@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<main>
+    <header>
+        <h2 style="margin-bottom: 0;">{{ page.title }}</h2>
+        <time datetime="{{ page.date }}">{{ page.date | date: "%b %d, %Y" }}</time>
+    </header>
+    {{ content }}
+</main>

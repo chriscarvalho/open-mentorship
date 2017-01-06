@@ -3,23 +3,20 @@
 */
 
 /* Colours */
-$color-main: #ECF2DC;
-$color-background: #100A20;
-$color-accent: #FFCB22;
+$color-main: #31373D;
+$color-main-light: #798C9C;
+$color-accent: #00ADEE;
 
 /* Fonts */
 $font-family-sans: -apple-system, BlinkMacSystemFont,'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
 $font-family-serif: Athelas, Georgia, Cambria, "Times New Roman", serif;
 
-/* Font size */
-$font-size-xl: 48px;
-$font-size-l: 24px;
-$font-size-m: 20px;
-$font-size-s: 16px;
+$font-size-smaller: .875em;
+$font-size-larger: 1.25em;
+
+/* Measure */
+$measure: 2em;
 
 /* Responsive */
 $breakpoint-m: 960px;
 $breakpoint-s: 720px;
-
-/* Spacings */
-$spacing: 2em;

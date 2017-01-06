@@ -2,9 +2,13 @@
     TYPE
 */
 
-h1,h2,h3 {
+h1 {
     font-family: $font-family-serif;
     font-weight: bold;
+}
+
+h2 {
+    font-size: 1em;
 }
 
 h1,h2,h3,p,ul {
@@ -12,19 +16,27 @@ h1,h2,h3,p,ul {
     margin-bottom: 2em;
 }
 
-.font-size-xl   { font-size: $font-size-xl; }
-.font-size-l    { font-size: $font-size-l; }
-.font-size-m    { font-size: $font-size-m; }
-.font-size-s    { font-size: $font-size-s; }
-
 a {
     color: $color-accent;
     text-decoration: none;
-    border-bottom: 1px solid $color-accent;
+
+    &:hover {
+        color: #90278e;
+    }
+
 }
 
-.attention {
-    text-align: center;
-    color: $color-accent;
+blockquote {
     font-family: $font-family-serif;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: $font-size-larger;
+}
+
+sup {
+    font-weight: bold;
+}
+
+time {
+    color: $color-main-light;
 }

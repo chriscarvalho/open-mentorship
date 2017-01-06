@@ -4,7 +4,7 @@
 
 html {
     font-family: $font-family-sans;
-    background: $color-background;
+    background: white;
     color: $color-main;
     line-height: 1.5em;
     -webkit-text-size-adjust: 100%;
@@ -13,12 +13,30 @@ html {
 }
 
 .wrap {
-    max-width: 50em;
     margin: 0 auto;
-    padding: $spacing * 2;
+    max-width: 36em;
+    padding: $measure * 2;
 
     @media screen and (max-width: $breakpoint-s) {
-        padding: $spacing;
+        padding: $measure;
+    }
+
+}
+
+.plain-ul {
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    display: inline-block;
+    padding: $measure/4 $measure/2;
+    border: 2px solid $color-accent;
+    border-radius: .25em;
+    font-weight: bold;
+
+    &:hover {
+        border-color: #90278e;
     }
 
 }
@@ -28,111 +46,29 @@ html {
 */
 
 header {
-    text-align: center;
-    padding: 0 0 $spacing 0;
+    padding: 0 0 $measure 0;
+    height: 38px;
+    position: relative;
 
-    img {
-        height: 150px;
-        width: 200px;
-        margin-bottom: $spacing;
-
-        @media screen and (max-width: $breakpoint-s) {
-            width: 100px;
-            height: 75px;
-        }
-
+    a {
+        border: 0;
     }
 
-    h1 {
-        @extend .font-size-xl;
+}
+
+/*
+    Updates
+*/
+
+.updates {
+    @extend .plain-ul;
+
+    li {
+        margin-bottom: 1em;
+    }
+
+    p {
         margin: 0;
-
-        @media screen and (max-width: $breakpoint-s) {
-            font-size: $font-size-l;
-        }
-
-    }
-
-}
-
-/*
-    Attention
-*/
-
-.attention {
-    @extend .font-size-l;
-    margin-left: -3em;
-    margin-right: -3em;
-
-    @media screen and (max-width: $breakpoint-m) {
-        margin-left: -1em;
-        margin-right: -1em;
-    }
-
-    @media screen and (max-width: $breakpoint-s) {
-        margin-left: 2em;
-        margin-right: 2em;
-    }
-
-}
-
-/*
-    Blocks
-*/
-
-.blocks {
-    display: table;
-    border-bottom: 2px solid $color-main;
-
-    h2,p,ul,a {
-        @extend .font-size-s;
-    }
-
-    h2 {
-        margin-top: 0;
-    }
-
-    ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    .block {
-        display: table-cell;
-        width: 50%;
-
-        div {
-            border-top: 2px solid $color-main;
-        }
-
-        .inner {
-            padding: $spacing 0;
-        }
-
-        &.padding-left {
-            padding-left: 1em;
-        }
-
-        &.padding-right {
-            padding-right: 1em;
-        }
-
-        p:last-of-type {
-            margin-bottom: 0;
-        }
-
-        @media screen and (max-width: $breakpoint-s) {
-            display: block;
-            width: 100%;
-
-            &.padding-left,
-            &.padding-right {
-                padding-left: 0;
-                padding-right: 0;
-            }
-
-        }
-
     }
 
 }
@@ -142,17 +78,16 @@ header {
 */
 
 .footnotes {
-    padding: $spacing 0;
+    padding: $measure 0;
 
     ol {
-        @extend .font-size-s;
+        font-size: $font-size-smaller;
         margin: 0;
         padding: 0;
     }
 
     p {
         margin: 0;
-        padding-left: .5em;
     }
 
 }
@@ -163,7 +98,6 @@ header {
 
 footer {
     padding: 2em 0 0 0;
-    width: 50%;
     border-top: 2px solid $color-main;
 
     @media screen and (max-width: $breakpoint-s) {
@@ -171,8 +105,66 @@ footer {
     }
 
     p {
-        @extend .font-size-s;
+        font-size: $font-size-smaller;
         margin: 0;
     }
 
+}
+
+/*
+    Bubble faces
+*/
+
+.bubbleLeft,
+.bubbleRight {
+    display: block;
+    height: 38px;
+    width: 40px;
+    position: absolute;
+    mix-blend-mode: multiply;
+    background-size: 40px;
+}
+
+.bubbleFace {
+    display: block;
+    width: 16px;
+    height: 14px;
+    position: absolute;
+    top: 9px;
+    left: 17px;
+    background-image: url(/assets/bubbleFace.png);
+    background-size: 16px;
+}
+
+.bubbleLeft {
+    background-image: url(/assets/bubbleLeft.png);
+    animation: bounce 2000ms infinite;
+}
+
+.bubbleRight {
+    background-image: url(/assets/bubbleRight.png);
+    left: 10px;
+    animation: bounce 2000ms 800ms infinite;
+}
+
+
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -5px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -3px, 0);
+  }
+
+  90% {
+    transform: translate3d(0,-1px,0);
+  }
 }

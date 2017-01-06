@@ -2,18 +2,21 @@
 layout: default
 ---
 
-**#OpenMentorship** is a simple concept: I'm donating my time and knowledge, free of charge, to anyone who could benefit from it to do good in their lives. What 'good' means is up to them. It could mean changing their own circumstance, or pushing for change within their community.
+**#OpenMentorship** is a simple concept: I'm donating my time and knowledge to anyone who could use it. If you're currently in, or looking to get into, the design and startup space I'll do my best to offer guidance, advice or feedback.
 
-I'm extremely fortunate; I have skills that are transferable, in demand and have the ability to affect real change in one way or another. More importantly, I want to help people.
+> I want to help you, but I also want you to help me. Through our conversation I hope to gain insights and an understanding of backgrounds and challenges - either personally or professionally - I’ve not experienced.
 
-{% include attention.html content="I want to help people, but I also want them to help me. Through our conversations I hope to learn about, and hopefully gain a better understanding of, the hardships or challenges many face that I'm not exposed to personally." %}
+Our conversations can be about anything, there is no agenda. Ask for career advice, feedback on an idea or design or about my creative process. It's your time to do with as you wish[^1], no strings attached, no fees.
 
-I'll be recording and making these sessions free available[^1] to everyone. Sessions are for professional advice, design feedback or none of the above[^2]. There is no agenda.
+## Schedule
 
-If you'd like to help, [share this page](http://twitter.com/share?text=Read about %23OpenMentorship, a project by @adamwhitcroft) or - even better - get involved yourself[^3].
+I've set aside two 30 minute blocks every Wednesday evening (19:00GMT - 20:00GMT). Sessions can be booked 6 weeks in advance[^2]. If you view my calendar and there are no slots, drop me an email and we'll try work something out.
 
-{% include blocks.html %}
+{% include button.html text="Book a session" href="https://calendly.com/adamwhitcroft" %}
 
-[^1]: Sessions will only be recorded and released with the consent of the mentoree.
-[^2]: Please don't use this time to solicit freelance or partnership work, or ask about confidential information pertaining to me or my employer.
-[^3]: Consider offering your time and services to others for free too. An hour a week could make a huge difference to someone, and is very easily manageable.
+## Updates
+
+{% include updates.html %}
+
+[^1]: Please don't use this time to solicit freelance or partnership work, or ask about confidential information pertaining to me or my employer.
+[^2]: For personal reasons I've blocked off February 2017. I'll open sessions up again at the end of the month.

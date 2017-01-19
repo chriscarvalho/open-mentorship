@@ -9,7 +9,7 @@ layout: default
 - You are starting a consulting project and want some direction
 - You started contracting work and want some advice
 
-Our conversations can be about anything, there is no agenda, unless you want something more formal. Ask for career advice, feedback on a project, how to deal with difficult clients or situations, or anything else that’s on your mind[^1}. It’s your time to do with as you wish2, no strings attached, no fees.
+Our conversations can be about anything, there is no agenda, unless you want something more formal. Ask for career advice, feedback on a project, how to deal with difficult clients or situations, or anything else that’s on your mind[^1]. It’s your time to do with as you wish, no strings attached, no fees.
 
 
 ## What do I stand to gain?

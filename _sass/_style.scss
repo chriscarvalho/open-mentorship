@@ -106,45 +106,39 @@ footer {
 
     p {
         font-size: $font-size-smaller;
-        margin: 0;
+        margin: 0.375em 0;
     }
 
 }
 
 /*
-    Bubble faces
+    Logo
 */
 
-.bubbleLeft,
-.bubbleRight {
+.omlogo {
+  width: 56px;
+  height: 48px;
+
+
+  & > .bubbleLeft,
+  & > .bubbleLeft {
     display: block;
     height: 38px;
     width: 40px;
     position: absolute;
     mix-blend-mode: multiply;
     background-size: 40px;
-}
+  }
 
-.bubbleFace {
-    display: block;
-    width: 16px;
-    height: 14px;
-    position: absolute;
-    top: 9px;
-    left: 17px;
-    background-image: url(http://adamwhitcroft.com/open-mentorship/assets/bubbleFace.png);
-    background-size: 16px;
-}
-
-.bubbleLeft {
-    background-image: url(http://adamwhitcroft.com/open-mentorship/assets/bubbleLeft.png);
+  & > .bubbleLeft {
     animation: bounce 2000ms infinite;
-}
+    fill: #ff4f6d;
+  }
 
-.bubbleRight {
-    background-image: url(http://adamwhitcroft.com/open-mentorship/assets/bubbleRight.png);
-    left: 10px;
+  & > .bubbleRight {
     animation: bounce 2000ms 800ms infinite;
+    fill: #752ec0;
+  }
 }
 
 

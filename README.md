@@ -24,5 +24,5 @@ If you'd like to offer your mentor services to others, you're awesome! Here's a 
 
 * Sign up to a service like [Calendly](https://calendly.com/).
 * Decide how much time you would like to donate per week, and which day(s) work best for you. I'm starting with 2 30 minute blocks on Monday evenings.
-* Let people know! Use **#OpenMentorship** in your social media posts to help potential mentorees find you.
+* Let people know! Use [**#OpenMentorship**](https://twitter.com/search?q=%23openmentorship) in your social media posts to help potential mentorees find you.
 * Help other mentors get set up, or encourage people in your industry to get involved.
